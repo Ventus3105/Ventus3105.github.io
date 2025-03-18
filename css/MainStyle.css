@@ -1,0 +1,252 @@
+/*General*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+i{
+    padding-right: 10px;
+}
+
+/*Main Container 1*/
+.mainContainer1{
+    display: flex;
+    flex-direction: row;  
+    width: 90%;
+    height: 500px;
+    margin: 1% 0;  
+}
+
+.mainContainer1 > .infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(40, 40, 45);
+}
+
+.mainContainer1 > .infoContainer > p{
+    text-align: center;
+}
+
+.mainContainer1 > .infoContainer > .infoTitle{
+    color: rgb(187, 122, 37);
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 7%;
+}
+
+.mainContainer1 > .infoContainer > .infoHistory{
+    color: rgb(90, 90, 90);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2% 5%;
+}
+
+.mainContainer1 > .infoContainer > .infoDescription{
+    color: white;
+    margin: 0 5%;
+}
+
+.mainContainer1 > .imageContainer{
+    width: 40%;
+}
+
+.shopping{
+    display:block;
+    padding: 15px;
+    margin: 5%;
+    width: 20vh;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+
+/*Main Container 2*/
+.mainContainer2{
+    display: flex;
+    flex-direction: row;  
+    width: 95%;
+    height: 300px;
+    margin: 1% 0; 
+}
+
+.mainContainer2 > .infoContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+
+.mainContainer2 > .infoContainer > .infoTitle{
+    color: rgb(187, 122, 37);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1% 0;
+}
+
+.mainContainer2 > .infoContainer > .infoShort{
+    
+    font-size: 17px;
+    font-weight: bold;
+    margin: 1% 0;
+}
+
+.mainContainer2 > .infoContainer > .infoDescription{
+    margin: 1% 0;
+    font-size: 15px;
+}
+
+.mainContainer2 > .imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.moreInfo{
+    display:block;
+    padding: 15px;
+    margin: 5%;
+    width: 20vh;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 1080px){
+    /*Main Container 1*/
+    .mainContainer1{
+        display: flex;
+        flex-direction: row;  
+        width: 80%;
+        height: 500px;
+        margin: 1% 0;  
+    }
+
+    .mainContainer1 > .infoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 60%;
+        background-color: rgb(40, 40, 45);
+    }
+
+    .mainContainer1 > .infoContainer > p{
+        text-align: center;
+    }
+
+    .mainContainer1 > .infoContainer > .infoTitle{
+        color: rgb(187, 122, 37);
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 7%;
+    }
+
+    .mainContainer1 > .infoContainer > .infoHistory{
+        color: rgb(90, 90, 90);
+        font-size: 18px;
+        font-weight: bold;
+        margin: 2% 5%;
+    }
+
+    .mainContainer1 > .infoContainer > .infoDescription{
+        color: white;
+        margin: 0 5%;
+        display: none;
+    }
+
+    .mainContainer1 > .imageContainer{
+        width: 40%;
+    }
+
+    .shopping{
+        display:block;
+        padding: 10px;
+        margin: 5%;
+        width: 160px;
+        background-color: black;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+
+    /*Main Container 2*/
+    .mainContainer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: 650px;
+        margin: 5% 0 3%; 
+    }
+
+    .mainContainer2 > .infoContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        border: 3px solid black; 
+        margin: 0 0 5%;
+    }
+
+    .mainContainer2 > .infoContainer > .infoTitle{
+        color: rgb(187, 122, 37);
+        font-size: 30px;
+        font-weight: bold;
+        margin: 1% 3%;
+    }
+
+    .mainContainer2 > .infoContainer > .infoShort{
+        font-size: 17px;
+        font-weight: bold;
+        margin: 1% 3%;
+    }
+
+    .mainContainer2 > .infoContainer > .infoDescription{
+        margin: 1% 3%;
+        font-size: 15px;
+    }
+
+    .mainContainer2 > .imageContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+
+    .mainContainer2 >.imageContainer > div{
+        margin: 0 1%;
+    }
+
+    .moreInfo{
+        display:block;
+        padding: 15px;
+        margin: 5%;
+        width: 20vh;
+        background-color: black;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 2vh;
+        align-self: flex-end;
+    }
+}
+

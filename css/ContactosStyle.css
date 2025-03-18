@@ -1,0 +1,482 @@
+/*General*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+/*Page Title*/
+.pageTitle{
+    width: 99%;
+    height: 10%;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-color: rgb(163, 163, 163);
+    padding: 3% 0;
+    margin: 1% 0;
+}
+
+.pageTitle > p{
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 5px;
+}
+
+/*Page Containers*/
+.mainContainer{
+    display: flex;
+    flex-direction: row;  
+    width: 95%;
+    height: 700px;
+    margin: 1% 0;  
+}
+
+.mainContainer > .textContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.mainContainer > .writableContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+/*Text Container*/
+.mainTitle{
+    font-size: 40px;
+    font-weight: 1000;
+    margin: 1% 2%;
+}
+
+.ipsum1{
+    font-size: 18px;
+    margin: 1% 2%;;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ipsum2{
+    font-size: 15px;
+    margin: 1% 2%;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.sectionTitle{
+    margin: 1% 2%;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.textContainer > a{
+    margin: 2% 4%;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+i{
+    padding-right: 10px;
+}
+
+.circleContainer{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleImage{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, rgb(187, 122, 37), rgb(226, 236, 248));
+    border: 2px solid rgb(187, 122, 37);
+}
+
+.brandLogo{
+    display: block;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    right: -63px;
+    bottom: -60px;
+}
+
+.socialLogo{
+    height: 40px;
+    width: 40px;
+}
+
+.socialLogo > a > img{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.socialLogo.twitter{
+    position: relative; 
+    right: -104px;
+    bottom: 190px;
+}
+
+.socialLogo.facebook{
+    position: relative; 
+    right: -165px;
+    bottom: -55px;
+}
+
+.socialLogo.instagram{
+    position: relative; 
+    right: -190px;
+    bottom: 100px;
+}
+
+.socialLogo.whatsapp{
+    position: relative; 
+    right: -20px;
+    bottom: 180px;
+}
+
+.socialLogoDIY.blueplane{
+    position: relative; 
+    right: -40px;
+    bottom: 106px;
+}
+
+.socialLogoDIY{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(83, 185, 233);
+}
+
+.socialLogoDIY > a{
+    color: white;
+    text-align: center;
+    margin-left: 7px;
+}
+
+/*Form Content*/
+.writableContainer > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.writableContainer > form > div{
+    margin: 1%;
+}
+
+.formBox{
+    width: 100%;
+    height: 45px;
+    padding: 1%;
+    border-radius: 5px;
+    color: red;
+    font-size: 17px;
+    border-color: red;
+    background-color:rgb(253, 192, 185);
+    border-width: 2px;
+}
+
+.formBox::selection{
+    border-color: red;
+    color: red;
+}
+
+.formBox::placeholder{
+    color: red;
+    font-size: 17px;
+}
+
+.selectBox{
+    color: rgb(187, 122, 37);
+    background-color: white;
+    border-color: rgb(187, 122, 37);
+    font-size: 17px;
+}
+
+.formBox.mesageBox{
+    height: 250px;
+    font-size: 17px;
+    color: red;
+}
+
+.checkbox {
+    margin: 2% 1% 0 0;
+}
+
+.checkboxText{
+    font-weight: bold;
+}
+
+.checkboxText > a{
+    text-decoration: none;
+}
+
+.sendButton{
+    color: white;
+    background-color: rgb(187, 122, 37);
+    width: 100%;
+    height: 45px;
+    padding: 1%;
+    border-color: rgb(187, 122, 37);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1080px){
+    /*Page Title*/
+    .pageTitle{
+        width: 99%;
+        height: 10%;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        border-color: rgb(163, 163, 163);
+        padding: 3% 0;
+        margin: 1% 0;
+    }
+
+    .pageTitle > p{
+        text-align: center;
+        font-size: 50px;
+        font-style: italic;
+        text-shadow: 0 0 10px black;
+        letter-spacing: 5px;
+    }
+
+    /*Page Containers*/
+    .mainContainer{
+        display: flex;
+        flex-direction: column-reverse;  
+        align-items: center;
+        width: 95%;
+        height: 1400px;
+        margin: 1% 0;  
+    }
+
+    .mainContainer > .textContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0 0 5%;
+    }
+
+    .mainContainer > .writableContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        border: 3px solid rgb(187, 122, 37);
+        margin: 0 0 5%;
+    }
+
+    /*Text Container*/
+    .mainTitle{
+        font-size: 40px;
+        font-weight: 1000;
+        margin: 1% 2%;
+    }
+
+    .ipsum1{
+        font-size: 18px;
+        margin: 1% 2%;;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .ipsum2{
+        font-size: 15px;
+        margin: 1% 2%;
+        padding-right: 20px;
+        font-weight: 500;
+    }
+
+    .sectionTitle{
+        margin: 1% 2%;
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .textContainer > a{
+        margin: 2% 4%;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    i{
+        padding-right: 10px;
+    }
+
+    .circleContainer{
+        display: flex;
+        height: 60%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circleImage{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, rgb(187, 122, 37), rgb(226, 236, 248));
+        border: 2px solid rgb(187, 122, 37);
+    }
+
+    .brandLogo{
+        display: block;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        right: -63px;
+        bottom: -60px;
+    }
+
+    .socialLogo{
+        height: 40px;
+        width: 40px;
+    }
+
+    .socialLogo > a > img{
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .socialLogo.twitter{
+        position: relative; 
+        right: -104px;
+        bottom: 190px;
+    }
+
+    .socialLogo.facebook{
+        position: relative; 
+        right: -165px;
+        bottom: -55px;
+    }
+
+    .socialLogo.instagram{
+        position: relative; 
+        right: -190px;
+        bottom: 100px;
+    }
+
+    .socialLogo.whatsapp{
+        position: relative; 
+        right: -20px;
+        bottom: 180px;
+    }
+
+    .socialLogoDIY.blueplane{
+        position: relative; 
+        right: -40px;
+        bottom: 106px;
+    }
+
+    .socialLogoDIY{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(83, 185, 233);
+    }
+
+    .socialLogoDIY > a{
+        color: white;
+        text-align: center;
+        margin-left: 7px;
+    }
+
+    /*Form Content*/
+    .writableContainer > form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .writableContainer > form > div{
+        margin: 1%;
+    }
+
+    .formBox{
+        width: 100%;
+        height: 45px;
+        padding: 1%;
+        border-radius: 5px;
+        color: red;
+        font-size: 17px;
+        border-color: red;
+        background-color:rgb(253, 192, 185);
+        border-width: 2px;
+    }
+
+    .formBox::selection{
+        border-color: red;
+        color: red;
+    }
+
+    .formBox::placeholder{
+        color: red;
+        font-size: 17px;
+    }
+
+    .selectBox{
+        color: rgb(187, 122, 37);
+        background-color: white;
+        border-color: rgb(187, 122, 37);
+        font-size: 17px;
+    }
+
+    .formBox.mesageBox{
+        height: 250px;
+        font-size: 17px;
+        color: red;
+    }
+
+    .checkbox {
+        margin: 2% 1% 0 0;
+    }
+
+    .checkboxText{
+        font-weight: bold;
+    }
+
+    .checkboxText > a{
+        text-decoration: none;
+    }
+
+    .sendButton{
+        color: white;
+        background-color: rgb(187, 122, 37);
+        width: 100%;
+        height: 45px;
+        padding: 1%;
+        border-color: rgb(187, 122, 37);
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}

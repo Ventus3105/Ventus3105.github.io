@@ -12,3 +12,6 @@ Los tabs de la parte superior seran la forma principal de navegar la pagina web,
 
 Datos a tener en cuenta:
 El projecto se ha echo con todo lo nesesario aparte de las animaciones a causa de falta de tiempo, puede que falte tambien algun que otro detalle que se me alla escapado.
+
+Hosting URL:
+https://ventus3105.github.io./

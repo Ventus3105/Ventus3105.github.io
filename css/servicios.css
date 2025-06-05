@@ -1,0 +1,108 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    margin: 1% 0;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+.information > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 350px;
+    background-color: rgb(43, 43, 153);
+    margin: 3% 0;
+}
+
+.information > div > .image {
+    height: 80%;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.information > div > .image > img {
+    border-radius: 2%;
+}
+
+.information > div > .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 60%;
+    margin: 5%;
+    color: white;
+}
+
+.information > div > .text > p {
+    padding: 10px 0;
+}
+
+
+/*Phone Style*/
+@media only screen and (max-width: 600px){
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        margin: 1% 0;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+    }
+
+    .information > div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 450px;
+        background-color: rgb(43, 43, 153);
+        margin: 3% 0;
+    }
+
+    .information > div > .image {
+        height: 50%;
+        width: 80%;
+        margin: 2%;
+    }
+
+    .information > div > .image > img {
+        border-radius: 2%;
+    }
+
+    .information > div > .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        width: 80%;
+        margin: 2%;
+        font-size: 14px;
+        color: white;
+    }
+
+    .information > div > .text > p {
+        padding: 10px 0;
+    }
+}

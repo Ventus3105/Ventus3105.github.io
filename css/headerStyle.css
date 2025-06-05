@@ -1,0 +1,113 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(184, 217, 228);
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header > .image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    margin-left: 2%;
+}
+
+header > .image > img {
+    width: 100px;
+    height: 60px;
+}
+
+header > .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+    margin-right: 4%;
+}
+
+header > .buttons > a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none ;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    width: auto;
+    margin: 0 3%;
+}
+
+header > .buttons > a:hover {
+    color: rgb(43, 43, 153);
+    text-decoration: underline;
+}
+
+header > .buttons > .selected {
+    color: rgb(43, 43, 153);
+    text-decoration: underline;
+}
+
+
+/*Phone Style*/
+@media only screen and (max-width: 600px){
+    header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(184, 217, 228);
+        width: 100%;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    header > .image {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 20%;
+        margin-left: 2%;
+    }
+
+    header > .image > img {
+        width: 80px;
+        height: 50px;
+    }
+
+    header > .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 80%;
+        margin-right: 4%;
+    }
+
+    header > .buttons > a{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none ;
+        font-size: 14px;
+        font-weight: bold;
+        color: gray;
+        width: auto;
+        margin: 0 3%;
+    }
+
+    header > .buttons > a:hover {
+        color: rgb(43, 43, 153);
+        text-decoration: underline;
+    }
+
+    header > .buttons > .selected {
+        color: rgb(43, 43, 153);
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,257 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    margin: 1% 0;
+}
+
+.contactosTitle {
+    margin: 2% 0;
+    width: 25%;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 5px solid darkblue;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 420px;
+}
+
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.locationName {
+    margin: 1% 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.mapContainer > iframe {
+    width: 90%;
+    height: 300px;
+}
+
+.locationInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.locationInfo > p {
+    margin: 2% 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.textIcon {
+    color: darkblue;
+    font-size: 15px;
+    font-weight: 0;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    background-color: rgb(184, 217, 228);
+    border-radius: 10px;
+}
+
+.contactContainer > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 95%;
+}
+
+.contactContainer > form > div {
+    margin: 2% 0;
+}
+
+.formText {
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgb(184, 217, 228);
+    width: 250px;
+}
+
+.formText::placeholder {
+    color: black;
+}
+
+textarea {
+    height: 100px;
+}
+
+.checkboxText {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+button {
+    border: 2px solid darkblue;
+    background-color: rgb(184, 217, 228);
+    border-radius: 4px;
+    height: 35px;
+    width: 80px;
+    color: darkblue;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: rgb(184, 217, 228);
+}
+
+
+/*Phone Style*/
+@media only screen and (max-width: 600px){
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60%;
+        margin: 1% 0;
+    }
+
+    .contactosTitle {
+        margin: 2% 0;
+        width: 25%;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        border-bottom: 5px solid darkblue;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 800px;
+        margin: 2%;
+    }
+
+    .mapContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        margin: 2% 0;
+    }
+
+    .locationName {
+        margin: 1% 0;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .mapContainer > iframe {
+        width: 90%;
+        height: 300px;
+    }
+
+    .locationInfo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .locationInfo > p {
+        margin: 2% 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .textIcon {
+        color: darkblue;
+        font-size: 15px;
+        font-weight: 0;
+    }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(184, 217, 228);
+        border-radius: 10px;
+        margin: 2% 0;
+    }
+
+    .contactContainer > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 95%;
+    }
+
+    .contactContainer > form > div {
+        margin: 2% 0;
+    }
+
+    .formText {
+        color: black;
+        border: none;
+        border-bottom: 2px solid black;
+        background-color: rgb(184, 217, 228);
+        width: 450px;
+    }
+
+    .formText::placeholder {
+        color: black;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .checkboxText {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    button {
+        border: 2px solid darkblue;
+        background-color: rgb(184, 217, 228);
+        border-radius: 4px;
+        height: 35px;
+        width: 80px;
+        color: darkblue;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: darkblue;
+        color: rgb(184, 217, 228);
+    }
+}
+

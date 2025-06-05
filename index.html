@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/generalStyle.css">
+    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="css/inicioStyle.css">
+    <link rel="stylesheet" href="css/footerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="image">
+            <img src="img/FTV2000Logo.png" alt="Logo Fuerteventura 2000">
+        </div>
+        <div class="buttons">
+            <a href="" class="selected">Inicio</a>
+            <a href="html/servicios.html">Servicios</a>
+            <a href="html/nosotros.html">Sobre nosotros</a>
+            <a href="html/contactos.html">Contacto</a> 
+        </div>
+    </header>
+    <main>
+        <div class="presentation">
+            <div class="image">
+                <img src="img/male-tutor-teaching-university-students-in-classro-2023-11-27-05-16-59-utc.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Fuerteventura 2000 es el centro de Formación Profesional de referencia en la isla de Fuerteventura. 
+                    Ofrecemos un servicio acorde a los más altos estándares de calidad, en unas instalaciones dotadas de los equipos más modernos y con un profesorado cualificado, 
+                    tanto a nivel académico como profesional.</p>
+                <p>Fuerteventura 2000 expresa públicamente su compromiso mediante el reconocimiento y prestigio dentro de la Comunidad Canaria como centro de formación no reglada; 
+                    privada, continua, bonificada, ocupacional e inserción laboral, de forma profesional, innovadora, basada en la competencia, 
+                    la seriedad y el cumplimiento con los compromisos de los clientes.</p>
+            </div>
+        </div>
+        <div class="sliderContainer">
+            <p>Colaboradores</p>
+            <div class="sliderBody">
+                <div class="sliderButtons"><button onclick="anterior()"><i class="fa-solid fa-arrow-left"></i></button></div>
+                <div class="sliderImage"><img id='imagen' src="/img/slider/servicio_canario_de_empleo.png" alt=""></div>
+                <div class="sliderButtons"><button onclick="siguiente()"><i class="fa-solid fa-arrow-right"></i></button></div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+    <footer>
+        <div class="info">
+            <div>
+                <p class="title">Conócenos</p>
+                <p>Conócenos El Centro de Formación Profesional Fuerteventura 2000 es el centro de formación de referencia en la isla de Fuerteventura. <a href="https://fuerteventura2000.com/aboutUs">Saber más</a></p>
+            </div>
+            <div>
+                <p class="title">Formación</p>
+                <a href="https://www.fuerteventura2000.com/oxfordTestOfEnglish">Oxford Test of English</a>
+                <a href="https://www.fuerteventura2000.com/questionnaire">Cuestionario</a>
+                <a href="https://campus.fuerteventura2000.com/SecureLogin/Login.aspx">Plataforma Ocupados Sepe</a>
+            </div>
+            <div>
+                <p class="title">Contacto</p>
+                <p>Calle Gran Canaria, 54, 35600 Puerto del Rosario, Las Palmas</p>
+                <a href="https://fuerteventura2000.com/contact">Más info.</a>
+            </div>
+            <div>
+                <p class="title">Legal</p>
+                <a href="https://nformar.com/politica_seguridad_nformar_rev4.pdf">Política de Seguridad</a>
+                <a href="https://www.fuerteventura2000.com/privacyPolicy">Compromiso con la Protección de Datos Personales</a>
+                <a href="https://www.fuerteventura2000.com/cookiesPolicy">Política de Cookies</a>
+                <a href="https://www.fuerteventura2000.com/securityPolicy">Política de Privacidad</a>
+                <a href="https://www.fuerteventura2000.com/configCookies">Configuración De Cookies</a>
+            </div>
+            <div>
+                <p class="title">Sociales</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/fuerteventura2000"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ftv_2000/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/ftv-2000?_l=es_ES"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Fuerteventura 2000. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
